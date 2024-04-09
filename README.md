@@ -1,4 +1,4 @@
-# The movie SPA
+# Movies SPA
 
 
 API Source: https://www.themoviedb.org/
