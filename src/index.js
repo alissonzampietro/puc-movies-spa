@@ -8,13 +8,12 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { AboutView } from './views/AboutView';
-import { Root } from './routes/root';
 import { MovieView } from './views/MovieView';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <App />,
     children: [
       {
         path: '/',
