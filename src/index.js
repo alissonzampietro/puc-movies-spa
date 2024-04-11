@@ -7,8 +7,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { MoviesList } from './components/MoviesList';
-import { About } from './components/About';
+import { AboutView } from './views/AboutView';
 import { Root } from './routes/root';
 import { MovieView } from './views/MovieView';
 
@@ -23,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'about',
-        element: <About />
+        element: <AboutView />
       }
     ]
   }
