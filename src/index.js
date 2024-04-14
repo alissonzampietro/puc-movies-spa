@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import { AboutView } from './views/AboutView';
 import { MovieView } from './views/MovieView';
+import { MovieDetailView } from './views/MovieDetailView';
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <MovieView />
+        element: <MovieView /> 
+      },
+      {
+        path: '/movie/:id',
+        element: <MovieDetailView /> 
       },
       {
         path: 'about',
